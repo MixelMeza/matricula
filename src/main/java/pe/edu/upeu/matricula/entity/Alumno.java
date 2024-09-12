@@ -43,6 +43,9 @@ public class Alumno {
 	@Column(name = "correo")
 	private String correo;
     
+	
+	
+	
 	@OneToMany(cascade = CascadeType.ALL , fetch = FetchType.LAZY, mappedBy = "alumnos")
 	@JsonIgnore
 	private Set<Matricula> matriculas;
